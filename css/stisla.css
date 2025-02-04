@@ -1,6 +1,12 @@
 /*reset*/
 html, body {
 	height: 100% !important;
+	overflow-x: hidden; /* Prevents horizontal scrolling */
+    width: 100%;
+}
+.container, .row {
+    margin: 0 auto;
+    max-width: 100%;
 }
 
 .main-loading {
@@ -151,7 +157,9 @@ html, body {
 	width: 100%;
 	padding-top: 25px;
 	padding-bottom: 25px;
-	z-index: 100;
+	background-color: rgba(0, 0, 0, 0.9); 
+    backdrop-filter: blur(10px); 
+    z-index: 1000; 
 }
 
 .navbar.main-navbar.bg-dark {
