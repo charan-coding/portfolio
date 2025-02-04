@@ -826,7 +826,13 @@ footer i {
     }
 
     .timeline-container.right {
-        left: 0; /* Ensure all items align properly */
+        left: 0; 
+		text-align: left;
+    }
+
+	.timeline-container.left {
+        left: 0; 
+		text-align: left;
     }
 
     .timeline-container::before {
