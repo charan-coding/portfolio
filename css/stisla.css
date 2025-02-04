@@ -743,6 +743,10 @@ footer i {
 }
 
 @media screen and (max-width: 768px) {
+	.navbar.main-navbar {
+        background-color: black !important; /* Fully opaque background */
+        backdrop-filter: none !important; /* Disable blur on mobile */
+    }
 	.hero .text {
 		left: 20px;
 		right: 20px;
