@@ -410,6 +410,7 @@ section.callout h3 {
 	display: flex;
 	display: -webkit-flex;
 	width: 100%;
+	height: 100%;
 }
 
 .list-item.no-spacing {
@@ -418,8 +419,10 @@ section.callout h3 {
 
 .list-item .icon,
 .list-item .desc {
-	flex: 1;
-	-webkit-flex: 1;
+	flex-grow: 1; /* Allows text to expand and fill space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Pushes "Read More" to the bottom */
 }
 
 .list-item .icon {
@@ -447,6 +450,10 @@ section.callout h3 {
 .list-item .desc .more {
 	display: inline-block;
 	margin-top: 10px;
+}
+
+.list-item .more {
+    margin-top: auto; /* Forces "Read More" to align at the bottom */
 }
 
 /*article*/
