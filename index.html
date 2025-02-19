@@ -549,60 +549,7 @@
 		</section>
 		
 
-		<section class="padding bg-grey" id="contact">
-			<div class="container">
-				<h2 class="section-title text-center">Contact Us</h2>
-				<p class="section-lead text-center text-muted">Send us your inquiry, we will help you and reply as soon as possible</p>
-				<div class="section-body">				
-					<div class="row col-spacing">
-						<div class="col-12 col-md-5">
-							<p class="contact-text">You can send us something like a question or project, we are open 09:00 to 17:00.</p>
-							<ul class="contact-icon">
-								<li><i class="ion ion-ios-telephone"></i> <div>+6212345123</div></li>
-								<li><i class="ion ion-ios-email"></i> <div>hi@kodinger.com</div></li>
-							</ul>
-							<iframe src="https://snazzymaps.com/embed/10159" style="border:none;" class="maps"></iframe>
-						</div>
-						<div class="col-12 col-md-7">
-							<form class="contact row" id="contact-form">
-								<div class="form-group col-6">
-									<input type="text" class="form-control" placeholder="Name" name="name" required="">
-								</div>
-								<div class="form-group col-6">
-									<input type="email" class="form-control" placeholder="Email" name="email" required="">
-								</div>
-								<div class="form-group col-12">
-									<input type="text" class="form-control" placeholder="Subject" name="subject" required="">
-								</div>
-								<div class="form-group col-12">
-									<textarea class="form-control" placeholder="Message" name="message" required=""></textarea>
-								</div>
-								<div class="form-group col-12 mt-2">
-									<button class="btn btn-primary">
-										Send Message
-									</button>
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
 
-		<section class="callout">
-			<div class="container">
-				<div class="row align-items-center">
-					<div class="col-12 col-md-8 text">
-						<h3>Start your project with this awesome template</h3>
-					</div>
-					<div class="col-12 col-md-4 cta">
-						<a href="#" class="btn btn-outline-primary">
-							Download Now
-						</a>
-					</div>
-				</div>
-			</div>
-		</section>
 
 		<footer>
 			<div class="container">
@@ -610,10 +557,7 @@
 					<img src="img/logo-light.png" alt="Logo">
 				</figure>
 				<p>
-					Copyright &copy; 2017 Your Company
-				</p>
-				<p>
-					Made with <i class="ion-heart"></i> By Kodinger
+					Has aspects of a template <i class="ion-heart"></i> By Kodinger
 				</p>
 			</div>
 		</footer>
@@ -623,5 +567,60 @@
 		<script src="js/jquery.easeScroll.js"></script>
 		<script src="sweetalert/dist/sweetalert.min.js"></script>
 		<script src="js/stisla.js"></script>
+
+
+		<script>document.addEventListener("DOMContentLoaded", function () {
+    const navLinks = document.querySelectorAll("a.smooth-link");
+    const sections = document.querySelectorAll("section");
+
+    // Smooth scrolling when clicking navbar links
+    navLinks.forEach(link => {
+        link.addEventListener("click", function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute("href").substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80, // Adjust based on navbar height
+                    behavior: "smooth"
+                });
+
+                // Ensure correct active class updates
+                setTimeout(() => {
+                    updateActiveLink(targetId);
+                }, 500); // Small delay to allow scroll animation
+            }
+        });
+    });
+
+    // Function to update active class in navbar
+    function updateActiveLink(targetId) {
+        navLinks.forEach(link => {
+            link.classList.remove("active");
+            if (link.getAttribute("href") === `#${targetId}`) {
+                link.classList.add("active");
+            }
+        });
+    }
+
+    // Detect scrolling and update active link
+    window.addEventListener("scroll", function () {
+        let scrollY = window.scrollY + 150; // Adjust threshold
+
+        sections.forEach(section => {
+            let sectionTop = section.offsetTop;
+            let sectionHeight = section.offsetHeight;
+            let sectionId = section.getAttribute("id");
+
+            if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                updateActiveLink(sectionId);
+            }
+        });
+    });
+});
+
+		</script>
+		
 	</body>
 </html>
