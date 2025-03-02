@@ -941,6 +941,84 @@ footer i {
     perspective: 1000px;
     margin: 0 auto; /* Centers the tile inside its column */
 }
+/* Container Background */
+#Publications {
+    background-color: #1A1A1A; /* Dark grey background */
+    padding: 50px 0;
+}
+
+/* Section Title */
+.section-title {
+    color: #FFFFFF; /* White color */
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Publication Item Box */
+.publication-item {
+    background-color: #2E2E2E; /* Slightly lighter dark grey */
+    color: #E0E0E0; /* Light grey text */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border-left: 5px solid #6A0DAD; /* Purple accent line */
+}
+
+/* Publication Item Header */
+.publication-item h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: white; /* Purple color */
+    display: flex;
+    align-items: center;
+}
+
+/* Header Icons */
+.publication-item h3 i {
+    margin-right: 10px;
+}
+
+/* Paper Link */
+.paper a {
+    color: #FFFFFF; /* White color */
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Paper Link Icon */
+.paper a i {
+    margin-right: 10px;
+    color: #C0C0C0; 
+}
+
+/* Paper Details */
+.paper p {
+    font-size: 14px;
+    color: #C0C0C0; /* Light grey text */
+    margin: 5px 0;
+}
+
+/* Authors Label */
+.paper p b {
+    color: #FFFFFF; /* White color */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .publication-item {
+        padding: 15px;
+    }
+    .publication-item h3 {
+        font-size: 20px;
+    }
+    .paper p {
+        font-size: 13px;
+    }
+}
+
 
 /* 📱 Responsive Fixes */
 @media screen and (max-width: 1024px) {
