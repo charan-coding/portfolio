@@ -1145,3 +1145,57 @@ footer i {
         left: 8px; /* Ensure the circles stay aligned */
     }
 }
+
+#DungeonCrawl {
+    background: #1A1A1A; /* Dark background to match your theme */
+    padding: 50px 0;
+}
+
+#DungeonCrawl .section-title {
+    color: #FFFFFF; /* White title */
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+#DungeonCrawl .section-lead {
+    color: #C0C0C0; /* Light grey text */
+    margin-bottom: 20px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+#DungeonCrawl .btn-primary, .btn-secondary {
+    font-size: 18px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#DungeonCrawl .btn-primary {
+    background: #6A0DAD; /* Purple */
+    color: white;
+    border: 2px solid #6A0DAD;
+}
+
+#DungeonCrawl .btn-primary:hover {
+    background: #500a85; /* Darker purple */
+}
+
+#DungeonCrawl .btn-secondary {
+    background: #2E2E2E; /* Dark grey */
+    color: white;
+    border: 2px solid #6A0DAD;
+}
+
+#DungeonCrawl .btn-secondary:hover {
+    background: #3D3D3D;
+}
