@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HyperAccess Project</title>
+    <link rel="stylesheet" href="css/hyperaccess_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <section class="project-header">
+        <h1>HyperAccess: Blockchain-Based Trust System for Medical Data Access</h1>
+        <p>HyperAccess is a blockchain-powered trust system designed to digitize, streamline, and secure medical data-sharing agreements between hospitals, research institutions, and ethics boards. Built on Hyperledger Fabric, it ensures data integrity, privacy, and compliance with regulations like GDPR, allowing patients to control and audit access to their medical records in a transparent and verifiable manner</p>
+    </section>
+    
+    <section class="project-overview">
+
+        <h2>Problem Statement</h2>
+        <p>In the traditional healthcare system, medical data-sharing between hospitals, researchers, and ethical boards is often inefficient, slow, and vulnerable to security risks. Paper-based agreements and centralized storage mechanisms increase bureaucracy, introduce security loopholes, and fail to ensure full patient control over data access.</p>
+    </section>
+
+    <section class="key-features">
+        <h2>Key Features</h2>
+        <div class="features-grid">
+            <div class="feature"><i class="fas fa-lock"></i> <b>GDPR-Compliant Smart Contracts</b></div>
+            <div class="feature"><i class="fas fa-network-wired"></i> <b>Permissioned Blockchain</b></div>
+            <div class="feature"><i class="fas fa-search"></i> <b>Auditability & Trust</b></div>
+            <div class="feature"><i class="fas fa-file-contract"></i> <b>Automated Contract Generation</b></div>
+        </div>
+    </section>
+
+    <section class="project-overview">
+        <div class="feature-image">
+            <img src="img/hyperaccess.png" alt="HyperAccess System Diagram">
+        </div>
+    </section>
+    
+    <section class="technology-stack">
+        <h2>Technology Stack</h2>
+        <ul>
+            <li><b>Blockchain:</b> Hyperledger Fabric</li>
+            <li><b>Backend:</b> Node.js, Hyperledger Fabric SDK</li>
+            <li><b>Smart Contracts:</b> Chaincode (Go, JavaScript)</li>
+            <li><b>Database:</b> CouchDB</li>
+        </ul>
+    </section>
+    
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+    
+        <div class="faq-item">
+            <button class="faq-question">🔹 What is HyperAccess?</button>
+            <div class="faq-answer">
+                HyperAccess is a blockchain-based system designed to facilitate secure and transparent medical data-sharing between hospitals, research institutions, and ethics boards. It ensures <b>privacy, compliance, and trust</b> through smart contracts.
+            </div>
+        </div>
+    
+        <div class="faq-item">
+            <button class="faq-question">🔹 How does HyperAccess ensure patient privacy?</button>
+            <div class="faq-answer">
+                HyperAccess follows <b>GDPR-compliant privacy measures</b>, allowing patients to <b>control access permissions</b> to their medical data. Only authorized stakeholders can access data through <b>permissioned blockchain channels</b>, and patients can <b>revoke access anytime</b>.
+            </div>
+        </div>
+    
+        <div class="faq-item">
+            <button class="faq-question">🔹 Who are the key stakeholders in HyperAccess?</button>
+            <div class="faq-answer">
+                - <b>Patients</b>: Have control over who can access their data.<br>
+                - <b>Hospitals & Clinics</b>: Store and manage patient records securely.<br>
+                - <b>Research Institutions</b>: Request access to anonymized medical data.<br>
+                - <b>Ethics Boards & Regulatory Bodies</b>: Monitor data-sharing practices to ensure compliance.
+            </div>
+        </div>
+    
+        <div class="faq-item">
+            <button class="faq-question">🔹 What makes HyperAccess different from traditional data-sharing systems?</button>
+            <div class="faq-answer">
+                Unlike traditional <b>centralized data-sharing systems</b>, HyperAccess provides:<br>
+                - <b>Tamper-proof records</b> using blockchain.<br>
+                - <b>Permissioned access</b> instead of open databases.<br>
+                - <b>Instant auditing and transparency</b>.<br>
+                - <b>Automated smart contract approvals</b> to reduce paperwork delays.
+            </div>
+        </div>
+    
+        <div class="faq-item">
+            <button class="faq-question">🔹 How does HyperAccess comply with legal regulations?</button>
+            <div class="faq-answer">
+                The system is <b>designed to meet GDPR and HIPAA compliance standards</b> by ensuring:<br>
+                - <b>Explicit patient consent</b> before data is shared.<br>
+                - <b>Immutable logging of data access</b>.<br>
+                - <b>User-controlled access revocation</b>.<br>
+                - <b>Anonymization of sensitive information</b> where necessary.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">🔹 How does HyperAccess incentivize patients to share data?</button>
+            <div class="faq-answer">
+                Traditionally patients ar hounded for their data until they have signed the agreement. Unfortunately after this, the patients have no information about what is being done with their data. Hyperaccess aims to fix this by being traceable. When the patient knows that thier data has been used to advance medical science, they will be more incentivized to share further data.  
+            </div>
+        </div>
+    
+    
+    
+    </section>
+    
+    
+    <section class="cta">
+        <a href="files/hyper" class="btn" download><i class="fas fa-download"></i> Download paper</a>
+        <a href="https://github.com/charan-coding/infiniteOrgs" target="_blank" class="btn"><i class="fas fa-external-link-alt"></i> Look at the code</a>
+    </section>
+    
+    <script>
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>

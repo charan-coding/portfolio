@@ -1,0 +1,168 @@
+body {
+    
+    font-family: Arial, sans-serif;
+    background-color: #1A1A1A;
+    color: #E0E0E0;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.project-header {
+    text-align: center;
+    padding: 40px 20px;
+    margin: auto;
+    background-color: #6A0DAD;
+    color: #FFFFFF;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.project-overview, .key-features, .technology-stack, .faq, .cta {
+    max-width: 900px;
+    margin: auto;
+    padding: 10px 10px;
+    background-color: #2E2E2E;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+}
+
+
+.project-activity{
+    max-width: 900px;
+    margin: auto;
+    padding: 5px 5px;
+    background-color: #FFFFFF;
+    border-radius: 0px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+}
+
+
+.feature-image img {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.feature {
+    background: #3D3D3D;
+    padding: 15px;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.technology-stack ul {
+    list-style: none;
+    padding: 0;
+}
+
+.technology-stack li {
+    background: #3D3D3D;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    color: #FFFFFF;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-question {
+    background: #6A0DAD;
+    color: #FFFFFF;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    background: #3D3D3D;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.cta {
+    text-align: center;
+}
+
+.cta .btn {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 10px;
+    border-radius: 8px;
+    background: #6A0DAD;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cta .btn:hover {
+    background: #500a85;
+}
+
+.project-goals, .reputation-formula {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+    background-color: #2E2E2E;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    color: #E0E0E0;
+}
+
+h2 {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #3D3D3D;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    color: #FFFFFF;
+}
+
+.formula-box {
+    background: #6A0DAD;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
