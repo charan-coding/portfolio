@@ -1,145 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1">
-		<meta name="author" content="Kodinger">
-		<meta name="keyword" content="Kodinger, template, html5, css3, bootstrap4">
-		<meta name="description" content="HTML5 and CSS3 Template Based on Bootstrap 4">
-		<title>Charan Annadurai</title>
-		<link rel="icon" type="image/png" sizes="50x50" href="img/logo.png">
-		<link rel="stylesheet" href="ionicons/css/ionicons.min.css">
-		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-		<link rel="stylesheet" href="sweetalert/dist/sweetalert.css">
-		<link rel="stylesheet" href="css/stisla.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-		<!DOCTYPE html>
-<html lang="en">
 <head>
-	<meta name="viewport" content="width=device-width">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Charan Annadurai">
     <meta name="description" content="Charan Annadurai - Security Researcher & Blockchain Developer">
     <title>Charan Annadurai - Security Researcher & Blockchain Developer</title>
+    <link rel="icon" type="image/png" sizes="50x50" href="img/logo.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
     <link rel="stylesheet" href="ionicons/css/ionicons.min.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="sweetalert/dist/sweetalert.css">
     <link rel="stylesheet" href="css/stisla.css">
-    <style>
-		.card-img-top {
-		width: 100%;
-		height: 200px;
-		
-		}
-  		.timeline {
-            position: relative;
-            max-width: 1200px;
-            margin: 0 auto;
-			padding: 20px 0;
-        }
-		.timeline::after {
-			content: '';
-			position: absolute;
-			width: 4px;
-			background-color: white;
-			top: 0;
-			bottom: 0;
-			left: 50%;
-			transform: translateX(-50%);
-			z-index: 0; /* Keeps timeline line behind everything */
-		}
-		.timeline-container {
-			padding: 10px 40px;
-			position: relative;
-			background-color: inherit;
-			width: 50%;
-		}
-
-		.timeline-container.left::before, .timeline-container.right::before {
-			content: "";
-			height: 0;
-			position: absolute;
-			top: 22px;
-			width: 0;
-			z-index: 1;
-			border: medium solid white;
-		}
-
-		.timeline-container.left::before {
-			right: 30px;
-			border-width: 10px 0 10px 10px;
-			border-color: transparent transparent transparent white;
-		}
-
-		.timeline-container.right::before {
-			left: 30px;
-			border-width: 10px 10px 10px 0;
-			border-color: transparent white transparent transparent;
-		}
-
-		.timeline-container.left {
-			left: 0;
-			text-align: right;
-		}
-
-		.timeline-container.right {
-			left: 50%;
-			text-align: left;
-		}
-		.timeline-container::after {
-			content: '';
-			position: absolute;
-			width: 25px;
-			height: 25px;
-			background-color: white;
-			border: 4px solid purple;
-			top: 15px;
-			border-radius: 50%;
-			z-index: 1;
-		}
-		.left::after {
-			right: -12px;
-		}
-		.right::after {
-			left: -12px;
-		}
-		.content {
-			padding: 20px 30px;
-			background-color: black;
-			position: relative;
-			border-radius: 6px;
-			border: 2px solid white;
-		}
-
-		@media screen and (max-width: 768px) {
-			.timeline::after {
-				left: 20px;
-			}
-
-			.timeline-container {
-				width: 100%;
-				padding-left: 50px;
-				padding-right: 25px;
-			}
-
-			.timeline-container.right {
-				left: 0;
-			}
-
-			.timeline-container::after {
-				left: 8px;
-			}
-		}
-
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/custom.css">
 
 
-	  
 
-	</head>
 
-	<body>
+</head>
+
+<body>
 		<nav class="navbar navbar-expand-lg main-navbar">
 			<div class="container-fluid">			
 			  <a class="navbar-brand" href="#">
@@ -300,10 +181,10 @@
 							  <img class="card-img-top" src="img/news/hyperacess.png" alt="Article Image">
 							  <div class="card-body">
 								  <div class="card-subtitle mb-2 text-muted">under <a href="https://ivesk.hs-offenburg.de/"><b>ivESK, Hochschule Offenburg</b></a> in collabortion with <a href="https://www.hahn-schickard.de/"><b>Hahn Schickard, Villingen</b></a></div>
-							    <h4 class="card-title"><a href="#" data-toggle="read" data-id="1">HyperAccess - Fast and secure management of patient health data access </a></h4>
+                                                            <h4 class="card-title"><a href="hyperaccess.html">HyperAccess - Fast and secure management of patient health data access </a></h4>
 							    <p class="card-text">HyperAccess digitalises and automates data access management in healthcare using the Hyperledger Fabric blockchain. Contractual access rights between patients, medical centers (MCs), and research institutions (RCs) were optimised to ensure security, transparency, and reproducibility.</p>
 							    <div class="text-right">						    	
-								    <a href="#" class="card-more" data-toggle="read" data-id="1">Read More <i class="ion-ios-arrow-right"></i></a>
+                                                                    <a href="hyperaccess.html" class="card-more">Read More <i class="ion-ios-arrow-right"></i></a>
 							    </div>
 						    </div>
 						  </article>
@@ -313,10 +194,10 @@
 							<img class="card-img-top" src="img/news/fabric.png" alt="Agricultural Supply Chain Image">
 							<div class="card-body">
 								<div class="card-subtitle mb-2 text-muted">under <a href="https://ivesk.hs-offenburg.de/"><b>ivESK, Hochschule Offenburg</b></a> for the <a href="https://dipperlab.knust.edu.gh/"><b>DIPPER Project</b></a> in collaboration with <a href="https://www.knust.edu.gh/"><b> Kwame Nkrumah University of Science and Technology, Ghana</b></a> and <a href="https://sesitechnologies.com/"><b>SESI Technologies</b></a></div>
-								<h4 class="card-title"><a href="#" data-toggle="read" data-id="3">Agricultural Supply Chain Traceability</a></h4>
+                                                                <h4 class="card-title"><a href="supplychain.html">Agricultural Supply Chain Traceability</a></h4>
 								<p class="card-text">The Agricultural Supply Chain Traceability project leverages blockchain technology to ensure transparency, authenticity, and security in food supply chains. By integrating Hyperledger Fabric, every stage—from production to distribution—is securely recorded, enabling real-time tracking of agricultural produce.</p>
 								<div class="text-right">
-									<a href="#" class="card-more" data-toggle="read" data-id="3">Read More <i class="ion-ios-arrow-right"></i></a>
+                                                                        <a href="supplychain.html" class="card-more">Read More <i class="ion-ios-arrow-right"></i></a>
 								</div>
 							</div>
 						</article>
@@ -330,16 +211,16 @@
 									<a href="https://www.iitg.ac.in/"><b>IIT Guwahati</b></a> | Funded by <a href="https://www.daad.de/en/"><b>German Academic Exchange Service (DAAD)</b></a> and 
 									<a href="https://dst.gov.in/"><b>Department of Science & Technology (DST), India</b></a>
 								</div>
-								<h4 class="card-title">
-									<a href="#" data-toggle="read" data-id="2">Distributed Authentication and Privacy Scheme (DAPS)</a>
-								</h4>
+                                                                <h4 class="card-title">
+                                                                        <a href="daps.html">Distributed Authentication and Privacy Scheme (DAPS)</a>
+                                                                </h4>
 								<p class="card-text">
 									A decentralized authentication framework leveraging Decentralized Identifiers (DIDs) and Verifiable Credentials (VCs) 
 									to enable privacy-preserving authentication in Multi-Agent Systems (MAS). This system enhances security by minimizing centralized 
 									data storage and improving user control over digital identities.
 								</p>
 								<div class="text-right">
-									<a href="#" class="card-more" data-toggle="read" data-id="2">Read More <i class="ion-ios-arrow-right"></i></a>
+                                                                        <a href="daps.html" class="card-more">Read More <i class="ion-ios-arrow-right"></i></a>
 								</div>
 							</div>
 						</article>
@@ -350,7 +231,7 @@
 							<div class="card-body">
 								<div class="card-subtitle mb-2 text-muted">by <a href="#">Charan Annadurai</a> - Master's Thesis</div>
 								<h4 class="card-title">
-									<a href="#" data-toggle="read" data-id="1">
+                                                                        <a href="thesis.html">
 										Incentivizing Scientific Research Using a Reputation Scaled Proof of Stake Blockchain
 									</a>
 								</h4>
@@ -359,7 +240,7 @@
 									enabling decentralized incentive mechanisms for scientific discourse.
 								</p>
 								<div class="text-right">						    	
-									<a href="#" class="card-more" data-toggle="read" data-id="1">Read More <i class="ion-ios-arrow-right"></i></a>
+                                                                        <a href="thesis.html" class="card-more">Read More <i class="ion-ios-arrow-right"></i></a>
 								</div>
 							</div>
 						</article>
@@ -369,17 +250,17 @@
 							<img class="card-img-top" src="img/news/alert.png" alt="ITPS Project">
 							<div class="card-body">
 								<div class="card-subtitle mb-2 text-muted">by <a href="#">Charan Annadurai</a> - IT Security Project</div>
-								<h4 class="card-title">
-									<a href="#" data-toggle="read" data-id="2">
-										Intelligent Threat Prevention System (ITPS)
-									</a>
-								</h4>
+                                                                <h4 class="card-title">
+                                                                        <a href="itps.html">
+                                                                                Intelligent Threat Prevention System (ITPS)
+                                                                        </a>
+                                                                </h4>
 								<p class="card-text">
 									AI-powered Intrusion Prevention System using a <b>Hybrid Model (Anomaly-Based + Signature-Based Detection)</b> 
 									to detect and prevent real-time threats such as <b>SQLi, XSS, CSRF, JWT Attacks, and HTTP Smuggling</b>.
 								</p>
 								<div class="text-right">						    	
-									<a href="#" class="card-more" data-toggle="read" data-id="2">Read More <i class="ion-ios-arrow-right"></i></a>
+                                                                        <a href="itps.html" class="card-more">Read More <i class="ion-ios-arrow-right"></i></a>
 								</div>
 							</div>
 						</article>
@@ -389,17 +270,17 @@
 							<img class="card-img-top" src="img/news/password.png" alt="Password Management System">
 							<div class="card-body">
 								<div class="card-subtitle mb-2 text-muted">by <a href="#">Charan Annadurai</a> - Security & Authentication Project</div>
-								<h4 class="card-title">
-									<a href="#" data-toggle="read" data-id="3">
-										<b>Secure Password Management System</b>
-									</a>
-								</h4>
+                                                                <h4 class="card-title">
+                                                                        <a href="password.html">
+                                                                                <b>Secure Password Management System</b>
+                                                                        </a>
+                                                                </h4>
 								<p class="card-text">
 									Developed a <b>secure password management system</b> using <b>FastAPI and Python</b>, implementing best practices 
 									from the <b>Secure Software Development Lifecycle (SDLC)</b> to enhance credential security and prevent breaches.
 								</p>
 								<div class="text-right">						    	
-									<a href="#" class="card-more" data-toggle="read" data-id="3">Read More <i class="ion-ios-arrow-right"></i></a>
+                                                                        <a href="password.html" class="card-more">Read More <i class="ion-ios-arrow-right"></i></a>
 								</div>
 							</div>
 						</article>
