@@ -1,0 +1,161 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.hero {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.hero .text {
+    position: relative;
+    z-index: 1;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.btn-primary {
+    background-color: #6f42c1;
+    border-color: #6f42c1;
+}
+
+.btn-primary:hover {
+    background-color: #5936a8;
+    border-color: #5936a8;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0; /* Keeps timeline line behind everything */
+}
+
+.timeline-container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.timeline-container.left::before,
+.timeline-container.right::before {
+    content: "";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    border: medium solid white;
+}
+
+.timeline-container.left::before {
+    right: 30px;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+.timeline-container.right::before {
+    left: 30px;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+.timeline-container.left {
+    left: 0;
+    text-align: right;
+}
+
+.timeline-container.right {
+    left: 50%;
+    text-align: left;
+}
+
+.timeline-container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border: 4px solid purple;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.left::after {
+    right: -12px;
+}
+
+.right::after {
+    left: -12px;
+}
+
+.content {
+    padding: 20px 30px;
+    background-color: black;
+    position: relative;
+    border-radius: 6px;
+    border: 2px solid white;
+}
+
+@media screen and (max-width: 768px) {
+    .timeline::after {
+        left: 20px;
+    }
+
+    .timeline-container {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 25px;
+    }
+
+    .timeline-container.right {
+        left: 0;
+    }
+
+    .timeline-container::after {
+        left: 8px;
+    }
+}
