@@ -254,6 +254,26 @@ html, body {
 	height: 100%;
 	color: #fff;
 	position: relative;
+	display: flex;
+
+  /* 2. Center content horizontally */
+  justify-content: center;
+
+  /* 3. Center content vertically */
+  align-items: center;
+
+
+  /* --- Essential for Vertical Centering --- */
+
+  /* Make the hero section take up the full screen height */
+  /* This gives the content space to center vertically */
+  min-height: 100vh;
+
+
+  /* --- Text Alignment --- */
+
+  /* Ensure the text itself is center-aligned within its own box */
+  text-align: center;
 }
 
 .hero .text {
