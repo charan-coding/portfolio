@@ -253,23 +253,18 @@ html, body {
 .hero {
 	height: 100%;
 	color: #fff;
-	position: relative;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	min-height: 100vh;
+ 	text-align: center;
 }
 
 .hero .text {
-	position: absolute;
-	top: 60%;
-	left: 300px;
-	right: 300px;
-	transform: translateY(-60%);
-	-webkit-transform: translateY(-60%);
-	-moz-transform: translateY(-60%);
-	-o-transform: translateY(-60%);
-	-ms-transform: translateY(-60%);
 	z-index: 1;
 	text-align: center;
-}
 
+}
 .hero .text h1 {
 	margin: 0;
 	font-size: 64px;
