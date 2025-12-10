@@ -19,6 +19,44 @@
 
 
 </head>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const titles = [
+        "Assistant Vice President – IT Sec & Compliance",
+        "Security Researcher",
+        "Blockchain Developer"
+    ];
+
+    let idx = 0;
+    let charIdx = 0;
+    let typing = true;
+
+    const typedEl = document.getElementById("typed-title");
+
+    function typeLoop() {
+        let current = titles[idx];
+
+        if (typing) {
+            typedEl.textContent = current.substring(0, charIdx++);
+            if (charIdx > current.length) {
+                typing = false;
+                setTimeout(typeLoop, 2000);
+                return;
+            }
+        } else {
+            typedEl.textContent = current.substring(0, charIdx--);
+            if (charIdx < 0) {
+                typing = true;
+                idx = (idx + 1) % titles.length;
+            }
+        }
+
+        setTimeout(typeLoop, typing ? 50 : 30);
+    }
+
+    typeLoop();
+});
+</script>
 
 <body>
 		<nav class="navbar navbar-expand-lg main-navbar">
@@ -54,7 +92,7 @@
 			        <a class="nav-link smooth-link" href="#Hobbies">Hobbies</a>
 			      </li>
 				  <li class="nav-item">
-			        <a class="nav-link smooth-link" href="#Blog">Blog</a>
+			        <a class="nav-link" href="https://charansnook.wordpress.com/" target="_blank">Blog</a>
 			      </li>
 			    </ul>
 			    <form class="form-inline">
@@ -66,7 +104,11 @@
 		</nav>
 		<section class="hero bg-overlay" id="home" data-bg="img/Pic.jpg">
 			<div class="text py-5">
-				<h1>Hi, I am <span class="bold">Charan</span>, a security researcher & blockchain developer</h1>
+				<h1>
+				Hi, I am <span class="bold">Charan</span>, 
+				<span id="typed-title" style="color:#800080;"></span>
+			</h1>
+
 				<div class="cta">
 					<a href="#Education" class="btn btn-primary smooth-link">Get to know me</a>
 				</div>
@@ -124,11 +166,43 @@
 
 		<section class="bg-overlay padding" id="Experience" data-bg="img/projects.jpeg">
 			<div class="container">
+
+				
 				<div class="timeline">
+					<div class="timeline-container left">
+					<div class="content">
+						<div class="projects-details">
+							<div class="projects-badge"> Present</div>
+							<h2 class="projects-title">RUGr SIL – Assistant Vice President, IT Security & Compliance</h2>
+							<p class="projects-description">
+								Leading IT security and compliance initiatives including ISO 27001 readiness, SOC audit coordination, 
+								incident response planning, system hardening, and overall governance of security processes. Worked 
+								closely with management, external auditors, and internal security teams.
+							</p>
+							<div class="projects-cta">
+								<a href="#Freelance" class="btn btn-primary">Related Freelance Work</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="timeline-container right">
+						<div class="content">
+							<div class="projects-details">
+								<div class="projects-badge">May 2025 - Nov 2025</div>
+								<h2 class="projects-title">Freelance Security Consultant and Lead Implementor</h2>
+								<p class="projects-description"> Supporting organisations with <b>ISO 27001 audit preparation</b>, 
+                                <b>SOC and architecture review coordination</b>, 
+                                <b>incident handling</b>, and <b>security & compliance governance</b>.
+								<div class="projects-cta">
+									<a href="experience_iresk.html" class="btn btn-primary" target="_blank">Learn More</a>
+								</div>
+							</div>
+						</div>
+					</div>
 					<div class="timeline-container left">
 						<div class="content">
 							<div class="projects-details">
-								<div class="projects-badge">May 2024 - Current</div>
+								<div class="projects-badge">May 2024 - May 2025</div>
 								<h2 class="projects-title">ivESK - Research Associate & Blockchain Developer</h2>
 								<p class="projects-description">Worked on blockchain-based security, blockchain based data sharing agreements, decentralized authentication, and supply chain traceability solutions.</p>
 								<div class="projects-cta">
@@ -168,9 +242,9 @@
 
 
 
-		
 
-		<section class="padding bg-grey" id="Projects">
+
+		<section class="padding bg-grey" id="Projects" >
 			<div class="container">
 				<h2 class="section-title" style= "color: black;">Projects that I have worked on</h2>
 				<p class="section-lead text-muted">I have worked on the following projects at different points of time in my career and education. The projects are chronologically ordered.</p>
@@ -473,12 +547,12 @@
 				
 				<div class="btn-container">
 
-					<a href="https://grimmortality.my.canva.site/" target="_blank" class="btn btn-primary">
+					<a href="https://charan44.my.canva.site/" target="_blank" class="btn btn-primary">
 						<i class="fas fa-book"></i> Free Dungeon Crawl PDF
 					</a>
 		
 
-					<a href="maps.html" class="btn btn-secondary">
+					<a href="https://inkarnate.com/profile/yMj30x" target="_blank" class="btn btn-secondary">
 						<i class="fas fa-map-marked-alt"></i> View My Maps
 					</a>
 				</div>
@@ -492,9 +566,16 @@
 				<figure>
 					<img src="img/logo-light.png" alt="Logo">
 				</figure>
-				<p>
-					Has aspects of a template <i class="ion-heart"></i> By Kodinger (stisla)
-				</p>
+					<p style="line-height: 1.7;">
+
+						<i class="ion-email" style="color:#800080; font-size:20px;"></i> 
+						&nbsp; charan.442000@gmail.com <br>
+
+						<i class="ion-ios-telephone" style="color:#800080; font-size:20px;"></i> 
+						&nbsp; +91 93601 64553
+					</p>
+
+
 			</div>
 		</footer>
 

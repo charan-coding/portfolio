@@ -249,6 +249,11 @@ html, body {
 	opacity: 1;
 }
 
+#home.bg-overlay:before {
+    background: rgba(0, 0, 0, 0.25) !important;
+}
+
+
 /*hero*/
 .hero {
 	height: 100%;
@@ -343,7 +348,7 @@ section.bg-reverse {
 }
 
 section.bg-overlay {
-	background-color: rgba(0,0,0,0.85);
+	background-color: rgba(0,0,0,0.01);
 }
 
 section.padding {
